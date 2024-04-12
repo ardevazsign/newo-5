@@ -1,40 +1,94 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homework 11</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <title>Movie Search</title>
+
+  <link rel="stylesheet" href="./sass/index.scss">
+
 </head>
 <body>
-  <header class="holder">
-   <div class="form-div">
-    <form class="search-form" id="search-form">
-     <input 
-      class="input-search-form-"
-      type="text" 
-      name="searchQuery" 
-      autocomplete="off" 
-      placeholder="Search images..." />
-     <button type="submit">Search</button>
-    </form>
-   </div>
+  <header class="header-holder">
+  
+    <div class="logo-holder">
+      <h6>ArdevazSign</h6>
+      <h2>Search Movie Input</h2>
+    </div>
+  
+    <div class="search-input-holder">
+      <form id="form" action="">
+      <input type="text" id="search" placeholder="Search movie here...">
+      </form>
+
+      <button class="search-btn" onclick="searchMovies()">Search</button>
+    </div>
   </header>
 
-  <main class="main-content">
-    <section class="section">
-      <div class="container">
-        <div class="gallery">
-        <!-- image cards -->
+  
+  <main class="main-holder" id="main">
+      <div class="movie">
+
+
+      </div>
+  
+   
+  
+  
+      <!--  Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <div class="modal-details">
+           
+            <div class="details-container">
+              <h2>Title</h2>
+              <h6>Vote/Votes <span>6.96/783</span></h6>
+              <h6>Popularity <span>3409.846</span></h6>
+              <h6>Original Title <span>Title</span></h6>
+              <h6>Genre</h6>
+              <h4>ABOUT</h4>
+              <p>Lorem ipsum dolor sit ametconsectetur adipisicing elit.
+                Illum modi alias cumquedolorum voluptatum laudantium.
+                Suscipit ut sed culpa fuga.</p>
+              <div class="add-remove-btn">
+                <button class="add-watch">Add to Watch</button>
+                <button class="add-queue">Add to Queue</button>
+              </div>
+            </div>
+  
+          </div>
         </div>
       </div>
-    </section>
+  
+    </div>
+  
+    <!-- pagination -->
+    <div class="prevnext-holder">
+      <button onclick="prevPage()" class="prev-page">Previous</button>
+      <button onclick="nextPage()" class="next-page">Next</button>
+    </div>
+  
+  
+  
   </main>
 
 
-  <div class="gallery">
-    <!-- Image cards -->
-  </div>
+  <footer>
+    <div class="div-holder">
+      <h5>ArdevazSign</h5>
+      <h5>newojunio@gmail.com</h5>
+      <h5>2024</h5>
+      <h5>09167522487</h5>
+    </div>
+  </footer>
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+  <script type="module" src="index.js"></script>
+  </body>
+  
+  </html>
 
-  <script src="js/script.js" type="module"></script>
-</body>
-</html>
+
+

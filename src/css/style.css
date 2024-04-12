@@ -1,0 +1,119 @@
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.form-div{
+  display: flex;
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12),
+      0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+.search-form{
+  outline: none;
+  border: none;
+  margin-top: 10px;
+}
+input{
+  outline: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 8px 10px 8px 10px;
+  border: none;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+              0 1px 3px 0 rgba(0, 0, 0, 0.12),
+              0 1px 1px 0 rgba(0, 0, 0, 0.14);  
+}
+input:hover{
+  background-color: ghostwhite;
+}
+
+button{
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: none;
+  padding: 8px 10px 8px 10px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+              0 1px 3px 0 rgba(0, 0, 0, 0.12),
+              0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+button:hover{
+  background-color: ghostwhite;
+}
+
+/* main content */
+
+img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: block;
+  width: 270px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+/* Search Field */
+.search-form-input {
+  padding-left: 15px;
+  border: none;
+  
+}
+
+
+
+/* Gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lightbox {
+  color: black;
+  text-decoration: none;
+}
+
+.photo-card {
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 30px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+              0 1px 3px 0 rgba(0, 0, 0, 0.12),
+              0 1px 1px 0 rgba(0, 0, 0, 0.14);
+  
+}
+
+.info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+}
+
+.info-number {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 11px;
+}
